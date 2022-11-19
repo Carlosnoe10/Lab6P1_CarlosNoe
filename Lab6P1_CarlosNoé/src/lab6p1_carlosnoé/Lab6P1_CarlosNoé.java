@@ -94,11 +94,20 @@ public class Lab6P1_CarlosNoé {
     
     
     public static void juego2(){
+        Scanner scanner = new Scanner(System.in);
         int tam1= 4;
         int tam2= 4;
+        int ganador=0;
+        int perdedor=0;
         String Matriz[][]=GeneradorM(tam1,tam2);
+        for (int i = 0; i < 5; i++) {
+        System.out.println("1.Scissors, 2.cuts, 3. paper, 4.rock, 5.Spock" );
+        System.out.println("Ingrese su turno");
+        int num = new Random().nextInt((5-1)+1)+1;
+        Matriz
+        }
+            
         
-         
     }
     
     
@@ -113,6 +122,9 @@ public class Lab6P1_CarlosNoé {
         imprimirMatriz1(Matriz);
         char matriz[][]=llenarMatriz12(Matriz, tam1, tam2);
         imprimirMatriz12(matriz);
+        if (true) {
+            
+        }
     }
         public static char [][] llenarMatriz12(int[][] matriz, int filas, int columnas){
         char[][] matrizChar= new char[filas][columnas]; 
@@ -125,6 +137,27 @@ public class Lab6P1_CarlosNoé {
         }
        return matrizChar;
         }
+            public static int [][] llenarMatriz12(int[][] matriz){
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                ;
+                
+            }
+        }
+    return matriz;
+    }
+         public static boolean [][] llenarMatriz122(int[][] matriz){
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if (i==j) {
+                    matriz[i][j]=0;
+                }
+        matriz[2][1]= false; 
+    
+    }
+            return matriz;
+        }
+         }
     public static int [][] llenarMatriz1(int[][] matriz){
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
